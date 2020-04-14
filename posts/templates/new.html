@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% block title %} Добавление новой публикации {% endblock %}
+{% block content %}
+{% load user_filters %}
+
+{% if user.is_authenticated %}
+<div class="card my-4">
+    <form method="POST" class="post-form" enctype="multipart/form-data">
+        {% csrf_token %}
+        <h5 class="card-header">Новая публикация</h5>
+        <div class="card-body">
+            <form>
+                <div class="form-group">
+                    {{field.label_tag}}<br />{{ form.group|addclass:"form-control" }}
+                    {{field.label_tag}}<br />{{ form.text|addclass:"form-control" }}
+                    {{field.label_tag}}<br />{{ form.image }}<br /><br />
+                    <button type="submit" class="btn btn-primary">Добавить</button>
+                </div>
+            </form>
+        </div>
+    </form>
+</div>
+{% else %}
+
+    <a class="p-2 text-dark" href="{% url 'login' %}">Войти</a>
+
+{% endif %}
+
+{% endblock %}
