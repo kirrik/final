@@ -14,7 +14,9 @@ __pycache__/
 *.sublime-project
 *.sublime-workspace
 
-static/
-posts/static/
+# static is out for test deploy on Heroku platform
+
+# static/
+# posts/static/
 
 media/
