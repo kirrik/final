@@ -4,3 +4,4 @@ requests==2.22.0
 sorl-thumbnail==12.6.3
 gunicorn
 django-heroku
+whitenoise
