@@ -1,5 +1,5 @@
-django==2.2.10
-pillow==7.0.0
+django==2.2.13
+pillow==8.0.1
 requests==2.22.0
 sorl-thumbnail==12.6.3
 gunicorn
