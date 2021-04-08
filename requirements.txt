@@ -1,4 +1,4 @@
-django==2.2.13
+django==2.2.20
 pillow==8.0.1
 requests==2.22.0
 sorl-thumbnail==12.6.3
