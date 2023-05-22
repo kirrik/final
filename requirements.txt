@@ -1,6 +1,6 @@
 django==2.2.13
 pillow==8.0.1
-requests==2.22.0
+requests==2.31.0
 sorl-thumbnail==12.6.3
 gunicorn
 django-heroku
